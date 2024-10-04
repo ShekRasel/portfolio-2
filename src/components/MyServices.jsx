@@ -2,32 +2,32 @@ import React from 'react'
 
 function MyServices() {
     const services = [{
-        logo: '/public/logo/1674840921638.jpeg',
+        logo: 'logo/1674840921638.jpeg',
         name : 'WebDevelopment',
         description : 'Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis blandit enimdicta sunt.'
     },
     {
-        logo: '/public/logo/7e5d06ec.jpg',
+        logo: 'logo/7e5d06ec.jpg',
         name : 'WebDevelopment',
         description : 'Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis blandit enimdicta sunt.'
     },
     {
-        logo: '/public/logo/images.png',
+        logo: 'logo/images.png',
         name : 'WebDevelopment',
         description : 'Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis blandit enimdicta sunt.'
     },
     {
-        logo: '/public/logo/logo_maker_design_app02.jpg',
+        logo: 'logo/logo_maker_design_app02.jpg',
         name : 'WebDevelopment',
         description : 'Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis blandit enimdicta sunt.'
     },
     {
-        logo: '/public/logo/movie-film-editor-logo-design-video-editing-logo-concept-free-vector.jpg',
+        logo: 'logo/movie-film-editor-logo-design-video-editing-logo-concept-free-vector.jpg',
         name : 'WebDevelopment',
         description : 'Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis blandit enimdicta sunt.'
     },
     {
-        logo: '/public/logo/movie-film-editor-logo-design-video-editing-logo-concept-free-vector.jpg',
+        logo: 'logo/movie-film-editor-logo-design-video-editing-logo-concept-free-vector.jpg',
         name : 'WebDevelopment',
         description : 'Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis blandit enimdicta sunt.'
     }]

@@ -15,12 +15,12 @@ function MyWork() {
     };
 
     const projects = [
-        { image: '/image/project1.png', name: 'NFT Market Place' },
-        { image: '/image/project2.png', name: 'Event Management System' },
-        { image: '/image/project3.png', name: 'Education Landing page' },
-        { image: '/image/insubordination-cover.webp', name: 'Education Landing page' },
-        { image: '/image/1.png', name: 'Education Landing page' },
-        { image: '/image/1.png', name: 'Education Landing page' },
+        { image: 'image/project1.png', name: 'NFT Market Place' },
+        { image: 'image/project2.png', name: 'Event Management System' },
+        { image: 'image/project3.png', name: 'Education Landing page' },
+        { image: 'image/insubordination-cover.webp', name: 'Education Landing page' },
+        { image: 'image/1.png', name: 'Education Landing page' },
+        { image: 'image/1.png', name: 'Education Landing page' },
     ];
 
     return (
