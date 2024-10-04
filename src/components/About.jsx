@@ -4,7 +4,7 @@ import { TfiEmail } from "react-icons/tfi";
 import { IoCallOutline } from "react-icons/io5";
 import { CiLocationOn } from "react-icons/ci";
 import { useEffect, useRef, useState } from "react";
-import useInView from "../hooks/UseInView";
+import useInView from './../hooks/useInView';
 
 
 function About() {
