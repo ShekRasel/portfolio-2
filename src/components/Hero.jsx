@@ -2,6 +2,9 @@ import React from 'react'
 import { RiFacebookFill } from "react-icons/ri";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa6";
+import { IoMdArrowDown } from "react-icons/io";
+import { Link } from 'react-scroll';
+
 
 function Hero() {
   return (
@@ -10,7 +13,19 @@ function Hero() {
           <h1 className='text-2xl md:text-4xl font-semibold text-indigo-700'>HELLO, I'M</h1>
           <h1 className='text-4xl md:text-6xl font-semibold mt-3'>SHEK RASEL</h1>
           <h2 className='text-gray-500 mt-4 text-lg font-semibold'>JavaScript Developer</h2>
-          <button className='bg-indigo-600 py-4 px-10 rounded-full mt-10 text-white shadow-lg shadow-indigo-500 hover:bg-slate-50 hover:text-black hover:border-indigo-700 hover:outline-indigo-700 hover:outline-1 hover:outline transition-all ease-in-out duration-500 font-semibold'>VIEW MY WORK</button>
+          <button className='bg-indigo-600 py-4 px-6 rounded-full mt-10 text-white shadow-lg shadow-indigo-500 hover:bg-slate-50 hover:text-black hover:border-indigo-700 hover:outline-indigo-700 hover:outline-1 hover:outline transition-all ease-in-out duration-500 font-semibold'>
+
+            <Link
+            className='flex gap-4 items-center'
+            to='portfolio'
+            
+            >
+
+              VIEW MY WORK <IoMdArrowDown className='text-2xl animate-bounce'/>
+
+            </Link>
+
+          </button>
 
           <div className=' mt-44 flex gap-2'>
             <div className='w-1/4  border-t-2 mt-5 border-indigo-600'></div>

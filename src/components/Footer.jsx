@@ -8,7 +8,7 @@ function Footer() {
     <div className=' bg-slate-800  pt-32' id='footer'>
         <div className='flex flex-col justify-center items-center w-full lg:px-48'>
             <img src="logo/mylogo.jpg" className='w-20 rounded-md shadow-md border-indigo-700' />
-            <p className='mt-12 text-center font-semibold text-white px-4 xl:px-32'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nulla tenetur commodi dignissimos saepe deserunt assumenda beatae omnis placeat suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dolorum id iure eius praesentium suscipit!</p>
+            <p className='mt-12 text-center font-semibold text-white px-4 xl:px-32'>Thank you for visiting my portfolio! I’m Shek Rasel, a passionate front-end developer from Gazipur, Bangladesh, dedicated to building beautiful and functional websites. Whether you’re looking for someone to bring your digital ideas to life, need advice on web development, or simply want to connect, I’m always excited to collaborate and create.</p>
             <div className='flex gap-8 mt-8'>
                 <span className='text-4xl p-5 rounded-full bg-slate-700 text-white hover:bg-indigo-600 transition-all ease-in-out duration-500'><RiFacebookFill/></span>
                 <span className='text-4xl p-5 rounded-full bg-slate-700 text-white hover:bg-indigo-600 transition-all ease-in-out duration-500'><BsLinkedin/></span>

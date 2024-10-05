@@ -11,7 +11,7 @@ function Contact() {
   return (
     <div className='px-4 md:px-8 lg:px-12 xl:px-20 2xl:px-80 bg-gray-50  pt-24 pb-24' id='contact'>
         <h1 className='text-4xl font-extrabold text-center'>Get In Touch</h1>
-        <p className='text-center xl:px-36 text-gray-500 mt-8 font-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad exercitationem recusandae obcaecati eos perferendis deleniti quia culpa. Laborum in ut a error iste? Accusantium delectus, dignissimos veritatis ut quae facilis!</p>
+        <p className='text-center xl:px-36 text-gray-500 mt-8 font-semibold'>Looking to collaborate or have any questions? Feel free to reach out! Whether it's for web development projects, consultations, or general inquiries, I'm here to help. You can contact me through email or phone, and I’ll respond as soon as possible!</p>
         <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-10 mt-14'>
             {contacts.map((contact,index)=>(
                 <div key={index} className='p-7 border shadow-md flex flex-col items-center justify-center gap-2 transition-all ease-in-out duration-500 hover:shadow-lg'>
