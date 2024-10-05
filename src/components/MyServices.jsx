@@ -40,10 +40,10 @@ function MyServices() {
         </p>
         <div className='mt-14 grid md:grid-cols-2 xl:grid-cols-3 gap-6'>
             {services.map((service,index)=>(
-                <div key={index} className='flex border-t p-8 flex-col items-center rounded-md transition-all duration-300 ease-in-out shadow-md hover:shadow-lg  overflow-hidden'>
+                <div key={index} className='flex  p-8 flex-col items-center rounded-lg transition-all duration-300 ease-in-out shadow-md hover:shadow-lg  overflow-hidden'>
                     <img src={service.logo} alt="" className='w-20'/>
-                    <h1 className='text-2xl font-semibold text-center mt-3'>{service.name}</h1>
-                    <p className='font-semibold text-gray-500 mt-4'>
+                    <h1 className='text-2xl font-bold text-center mt-3'>{service.name}</h1>
+                    <p className='font-bold text-gray-500 mt-4 text-justify'>
                         {service.description}
                     </p>
                 </div>  

@@ -10,9 +10,9 @@ function Footer() {
             <img src="logo/mylogo.jpg" className='w-20 rounded-md shadow-md border-indigo-700' />
             <p className='mt-12 text-center font-semibold text-white px-4 xl:px-32'>Thank you for visiting my portfolio! I’m Shek Rasel, a passionate front-end developer from Gazipur, Bangladesh, dedicated to building beautiful and functional websites. Whether you’re looking for someone to bring your digital ideas to life, need advice on web development, or simply want to connect, I’m always excited to collaborate and create.</p>
             <div className='flex gap-8 mt-8'>
-                <span className='text-4xl p-5 rounded-full bg-slate-700 text-white hover:bg-indigo-600 transition-all ease-in-out duration-500'><RiFacebookFill/></span>
-                <span className='text-4xl p-5 rounded-full bg-slate-700 text-white hover:bg-indigo-600 transition-all ease-in-out duration-500'><BsLinkedin/></span>
-                <span className='text-4xl p-5 rounded-full bg-slate-700 text-white hover:bg-indigo-600 transition-all ease-in-out duration-500'><FaGithub/></span>
+                <span className='text-4xl p-5 rounded-full bg-slate-700 text-white hover:bg-indigo-600 transition-all ease-in-out duration-500'><a href="https://web.facebook.com/profile.php?id=100008095329308"><RiFacebookFill/></a></span>
+                <span className='text-4xl p-5 rounded-full bg-slate-700 text-white hover:bg-indigo-600 transition-all ease-in-out duration-500'><a href="https://www.linkedin.com/in/shek-rasel/"><BsLinkedin/></a></span>
+                <span className='text-4xl p-5 rounded-full bg-slate-700 text-white hover:bg-indigo-600 transition-all ease-in-out duration-500'><a href="https://github.com/ShekRasel"><FaGithub/></a></span>
             </div>
         </div>
 

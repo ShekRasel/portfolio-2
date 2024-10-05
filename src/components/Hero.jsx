@@ -30,9 +30,9 @@ function Hero() {
           <div className=' mt-44 flex gap-2'>
             <div className='w-1/4  border-t-2 mt-5 border-indigo-600'></div>
             <div className='flex gap-3 md:gap-4'>
-            <span className='border rounded-full p-1 md:p-2 md:text-2xl hover:bg-indigo-600 transition-all ease-in-out duration-500 hover:text-white opacity-50'><RiFacebookFill/></span>
-            <span className='border rounded-full p-1 md:p-2 md:text-2xl hover:bg-indigo-600 transition-all ease-in-out duration-500 hover:text-white opacity-50'><BsLinkedin/></span>
-            <span className='border rounded-full p-1 md:p-2 md:text-2xl hover:bg-indigo-600 transition-all ease-in-out duration-500 hover:text-white opacity-50'><FaGithub/></span>
+            <span className='border rounded-full p-1 md:p-2 md:text-2xl hover:bg-indigo-600 transition-all ease-in-out duration-500 hover:text-white opacity-50'><a href="https://web.facebook.com/profile.php?id=100008095329308"><RiFacebookFill/></a></span>
+            <span className='border rounded-full p-1 md:p-2 md:text-2xl hover:bg-indigo-600 transition-all ease-in-out duration-500 hover:text-white opacity-50'><a href="https://www.linkedin.com/in/shek-rasel/"><BsLinkedin/></a></span>
+            <span className='border rounded-full p-1 md:p-2 md:text-2xl hover:bg-indigo-600 transition-all ease-in-out duration-500 hover:text-white opacity-50'><a href="https://github.com/ShekRasel"><FaGithub/></a></span>
             </div>
             <div className='w-1/4  border-t-2 mt-5 border-indigo-600'></div>
           </div>
