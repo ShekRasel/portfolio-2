@@ -2,34 +2,34 @@ import React from 'react'
 
 function MyServices() {
     const services = [{
-        logo: 'logo/1674840921638.jpeg',
-        name : 'WebDevelopment',
-        description : 'Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis blandit enimdicta sunt.'
+        logo: 'logo/JavaScript Development.png',
+        name : 'JavaScript Development',
+        description : ' I create interactive elements and features on websites using JavaScript. From dynamic forms to animations and real-time updates, I bring web pages to life through engaging scripts.'
     },
     {
-        logo: 'logo/7e5d06ec.jpg',
-        name : 'WebDevelopment',
-        description : 'Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis blandit enimdicta sunt.'
+        logo: 'logo/Website Development.jpg',
+        name : 'Website Development',
+        description : ' I create responsive and visually appealing websites using HTML, CSS, and JavaScript. My focus is on ensuring that your site is functional across different devices and platforms.'
     },
     {
-        logo: 'logo/images.png',
-        name : 'WebDevelopment',
-        description : 'Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis blandit enimdicta sunt.'
+        logo: 'logo/Landing Page Creation.png',
+        name : 'Landing Page Creation',
+        description : " I design and develop optimized landing pages tailored to your business goals. Whether it's to capture leads, promote a product, or share a message, I ensure the landing page is effective and user-friendly."
     },
     {
-        logo: 'logo/logo_maker_design_app02.jpg',
-        name : 'WebDevelopment',
-        description : 'Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis blandit enimdicta sunt.'
+        logo: 'logo/Web Performance Optimization.webp',
+        name : 'Web Performance Optimization',
+        description : ' I analyze and enhance website performance, focusing on speed and efficiency. This includes optimizing images, minifying code, and implementing best practices to ensure quick loading times.'
     },
     {
-        logo: 'logo/movie-film-editor-logo-design-video-editing-logo-concept-free-vector.jpg',
-        name : 'WebDevelopment',
-        description : 'Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis blandit enimdicta sunt.'
+        logo: 'logo/Responsive Design.jpg',
+        name : ' Responsive Design',
+        description : ' I ensure that websites look great and function well on any device—be it a desktop, tablet, or smartphone. My responsive designs adapt to various screen sizes for a seamless user experience.'
     },
     {
-        logo: 'logo/movie-film-editor-logo-design-video-editing-logo-concept-free-vector.jpg',
-        name : 'WebDevelopment',
-        description : 'Curabitur vitae magna felis. Nulla ac libero ornare, vestibulum lacus quis blandit enimdicta sunt.'
+        logo: 'logo/Git & Version Contro.png',
+        name : 'Git & Version Control',
+        description : "I offer to set up and manage version control systems using Git. This helps track changes, collaborate with others, and maintain a history of your project's development."
     }]
   return (
     <div className='px-4 md:px-8 lg:px-12 xl:px-20 2xl:px-80   pt-24 pb-24' id='service'>
