@@ -48,12 +48,12 @@ function About() {
   return (
     <div className='px-4 md:px-8 lg:px-12 xl:px-20 2xl:px-80 pt-24 bg-gray-50 pb-24' id="about">
       <h1 className='text-4xl font-extrabold text-center'>About Me</h1>
-      <p className='text-center xl:px-36 text-gray-500 mt-8 font-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad exercitationem recusandae obcaecati eos perferendis deleniti quia culpa. Laborum in ut a error iste? Accusantium delectus, dignissimos veritatis ut quae facilis!</p>
+      <p className='text-center xl:px-36 text-gray-500 mt-8 font-semibold'>Hi, I'm Shek Rasel, a dedicated web developer with a passion for crafting dynamic and user-centric websites. I specialize in frontend technologies, leveraging modern frameworks to build seamless digital experiences.</p>
 
       <div className='xl:flex xl:justify-between mt-10  items-center'ref={divRef}>
         <div className='xl:w-1/2'>
           <h1 className='text-2xl font-semibold text-indigo-600 text-center xl:text-start'>Hi There! I'm Shek Rasel</h1>
-          <p className='text-gray-500 font-semibold text-center xl:text-start mt-3'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos laboriosam maiores pariatur tempora aut unde at magnam quod sunt necessitatibus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae tempore commodi, dolor corporis repellat facere?</p>
+          <p className='text-gray-500 font-semibold text-center xl:text-start mt-3'>I strive to create innovative solutions that exceed expectations. My experience includes working on diverse projects, from small-scale applications to comprehensive systems. I'm constantly learning and adapting to industry trends, ensuring that my skills remain cutting-edge. Outside of development, I enjoy problem-solving and collaborating with others to bring creative ideas to life.</p>
           <div className='flex flex-col xl:flex-row xl:justify-between xl:gap-2 items-center xl:items-start'>
             <div className=''>
               <p className='mt-4 text-xl font-semibold text-indigo-600 flex items-center gap-2'>
