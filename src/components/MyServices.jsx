@@ -36,7 +36,7 @@ function MyServices() {
         <h1 className='text-4xl font-extrabold text-center'>
             My Services
         </h1>
-        <p className='text-center xl:px-36 text-gray-500 mt-8 font-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad exercitationem recusandae obcaecati eos perferendis deleniti quia culpa. Laborum in ut a error iste? Accusantium delectus, dignissimos veritatis ut quae facilis!
+        <p className='text-center xl:px-36 text-gray-500 mt-8 font-semibold'>I offer a range of front-end web development services, including creating responsive websites, building interactive user interfaces, and optimizing performance for a seamless user experience. Whether you're looking for a custom design or need to bring your ideas to life, I'm here to help you create stunning and functional websites.
         </p>
         <div className='mt-14 grid md:grid-cols-2 xl:grid-cols-3 gap-6'>
             {services.map((service,index)=>(
