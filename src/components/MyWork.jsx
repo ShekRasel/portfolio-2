@@ -24,7 +24,7 @@ function MyWork() {
         { image: 'image/weather_og.png', name: 'Weather App',projectLink:'https://react-weather-app-silk-five.vercel.app/' },
 
         { image: 'image/youtube.png', name: 'YouTube Clone, html/css',projectLink:'https://youtube-clone-eight-sable.vercel.app/' },
-        { image: 'image/1.png', name: 'Upcoming',projectLink:'' },
+        { image: 'image/cryptoland.png', name: 'Cryptoland',projectLink:'https://cryptoland-chi.vercel.app/' },
     ];
 
     return (
