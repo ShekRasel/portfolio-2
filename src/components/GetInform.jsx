@@ -9,7 +9,7 @@ function GetInform() {
                     <h1 className='text-2xl md:text-4xl text-center font-extrabold text-white'>Have any project on mind?</h1>
                     <p className='text-white mt-2 text-center'>If you want to get services from me then you can hire me, and also download my cv from here for any needed.</p>
                     <div className='flex flex-col md:flex-row gap-6 mt-5 '>
-                        <button className='bg-white px-10 py-3 rounded-full text-indigo-600  hover:bg-purple-600 hover:text-white transition-all ease-in-out duration-500'>Download CV</button>
+                        <button className='bg-white px-10 py-3 rounded-full text-indigo-600  hover:bg-purple-600 hover:text-white transition-all ease-in-out duration-500'><a href="https://github.com/ShekRasel/MY-CV/blob/main/Shek-Rasel.pdf" target='blank'>Download CV</a></button>
                         <button className=' px-14 py-3 rounded-full text-white font-semibold border hover:bg-indigo-400 transition-all ease-in-out duration-500'>Hire Me</button>
                     </div>
                 </div>

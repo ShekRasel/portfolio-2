@@ -13,9 +13,11 @@ function About() {
   const isInView = useInView(divRef);
 
   const skills = [{
-    name: 'HTML',percentage : 80
+    name: 'HTML',percentage : 70
   },{
     name: 'CSS',percentage : 60
+  },{
+    name: 'Tailwind Css',percentage : 50
   },{
     name: 'JavaScript',percentage : 50
   },{
@@ -50,40 +52,43 @@ function About() {
       <h1 className='text-4xl font-extrabold text-center'>About Me</h1>
       <p className='text-center xl:px-36 text-gray-500 mt-8 font-semibold'>Hi, I'm Shek Rasel, a dedicated web developer with a passion for crafting dynamic and user-centric websites. I specialize in frontend technologies, leveraging modern frameworks to build seamless digital experiences.</p>
 
-      <div className='xl:flex xl:justify-between mt-10  items-center'ref={divRef}>
+      <div className='xl:flex xl:justify-evenly gap-24 mt-10  items-center'ref={divRef}>
         <div className='xl:w-1/2'>
-          <h1 className='text-2xl font-semibold text-indigo-600 text-center xl:text-start'>Hi There! I'm Shek Rasel</h1>
-          <p className='text-gray-500 font-semibold text-center xl:text-start mt-3'>I strive to create innovative solutions that exceed expectations. My experience includes working on diverse projects, from small-scale applications to comprehensive systems. I'm constantly learning and adapting to industry trends, ensuring that my skills remain cutting-edge. Outside of development, I enjoy problem-solving and collaborating with others to bring creative ideas to life.</p>
-          <div className='flex flex-col xl:flex-row xl:justify-between xl:gap-2 items-center xl:items-start'>
-            <div className=''>
-              <p className='mt-4 text-xl font-semibold text-indigo-600 flex items-center gap-2'>
+          <h1 className='text-2xl font-semibold text-indigo-600 text-center xl:text-start'>Hi  There! I'm Shek Rasel</h1>
+          <p className='text-gray-500 font-semibold   mt-3 text-justify '>I strive to create innovative solutions that exceed expectations. My experience includes working on diverse projects, from small-scale applications to comprehensive systems. I'm constantly learning and adapting to industry trends, ensuring that my skills remain cutting-edge. Outside of development, I enjoy problem-solving and collaborating with others to bring creative ideas to life.</p>
+          <div className='flex pt-6 flex-col xl:flex-row xl:justify-between items-center  gap-3 lg:gap-0'>
+
+            <div className='flex flex-col gap-3 text-md 2xl:text-xl '>
+              <p className='  font-semibold text-indigo-600 flex items-center gap-2'>
                 <span className='shadow-md'><CiCalendarDate/></span> <span className=''>Date of birth :</span><span className='text-gray-500 font-thin'> 11 March 1999</span>
               </p>
 
-              <p className='mt-2 text-xl font-semibold text-indigo-600 flex items-center gap-2'>
+              <p className='  font-semibold text-indigo-600 flex items-center gap-2'>
                 <span className='shadow-md'><TfiEmail/></span> <span className=''>Email :</span><span className='text-gray-500 font-thin'>swe.rasel@gmail.com</span>
               </p>
 
             </div>
-            <div className='mr-8 xl:mr-0'>
-            <p className='xl:mt-4 mt-2 text-xl font-semibold text-indigo-600 flex items-center gap-2'>
+
+            <div className='flex flex-col gap-3 text-md 2xl:text-xl w-56 lg:w-auto'>
+              <p className=' font-semibold text-indigo-600 flex items-center gap-2'>
                 <span className='shadow-md'><IoCallOutline/></span> <span className=''>Phone :</span><span className='text-gray-500 font-thin'> 01648936921</span>
               </p>
 
-              <p className='mt-2 text-xl font-semibold text-indigo-600 flex items-center gap-2'>
+              <p className='font-semibold text-indigo-600 flex items-center gap-2'>
                 <span className='shadow-md'><CiLocationOn/></span> <span className=''>Location :</span><span className='text-gray-500 font-thin'> Gazipur,Dhaka</span>
               </p>
             </div>
+
           </div>
         </div>
 
-        <div className='xl:w-1/2 xl:pl-12'>
-          <div className="">
+        <div className='xl:w-1/2 '>
+          <div className=" md:px-12">
             {skills.map((skill,index)=>(
               <div key={index}>
                 <div className="flex justify-between pt-6">
-                  <h1>{skill.name}</h1>
-                  <h1>{animatedPercentage[index]}%</h1>
+                  <h1 className="text-indigo-900 font-semibold">{skill.name}</h1>
+                  <h1 className="text-indigo-500 font-semibold">{animatedPercentage[index]}%</h1>
                 </div>
                 <div className=' w-full mt-2 bg-gray-400 rounded-md flex items-center'>
                 <div

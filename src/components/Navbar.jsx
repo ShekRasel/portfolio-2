@@ -7,14 +7,20 @@ function Navbar() {
     const [bgHeight,setBgHeight] = useState(false);
     const [hamBurger,setHamBurger] = useState(false);
     const [line , setLine] = useState(null);
+    const [hoverLine, setHoverLine] = useState(null);
 
-    const showLine = (index)=>{
+    const showLine = (index) => {
+        setHoverLine(index);
+    }
+    
+    const hideLine = () => {
+        setHoverLine(null);
+    }
+    
+    const setActiveLine = (index) => {
         setLine(index);
     }
-
-    const hideLine = ()=>{
-        setLine(null);
-    }
+    
 
     const changeHamBurger = ()=>{
         setHamBurger(!hamBurger);
@@ -57,7 +63,7 @@ function Navbar() {
                                 onMouseLeave={hideLine}
                             >
                                 <div className='h-8'>
-                                    <div className={`bg-indigo-600 w-1 transition-all ease-out duration-500 ${line === index ? 'h-full' : 'h-0'}`}>
+                                    <div className={`bg-indigo-600 w-1 transition-all ease-out duration-500 ${line === index || hoverLine === index ?'h-full' : 'h-0'}`}>
                                         <p className='opacity-0'>.</p>
                                     </div>
                                 </div>
@@ -67,8 +73,10 @@ function Navbar() {
                                     spy={true}
                                     smooth={true}
                                     duration={500}
+                                    offset={-100}
                                     className='cursor-pointer'
                                     activeClass= 'text-indigo-600 font-bold'
+                                    onSetActive={() => setActiveLine(index)}
                                     >
                                         {item.name}
                                     </Link>
