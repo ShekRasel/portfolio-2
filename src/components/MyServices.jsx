@@ -1,4 +1,5 @@
 import React from 'react'
+import AnimateFadeUp from './AnimateFadeUp';
 
 function MyServices() {
     const services = [{
@@ -33,11 +34,17 @@ function MyServices() {
     }]
   return (
     <div className='px-4 md:px-8 lg:px-12 xl:px-20 2xl:px-80   pt-24 pb-24' id='service'>
-        <h1 className='text-4xl font-extrabold text-center'>
+        <AnimateFadeUp>
+            <h1 className='text-4xl font-extrabold text-center'>
             My Services
-        </h1>
+            </h1>
+        </AnimateFadeUp>
+
+        <AnimateFadeUp>
         <p className='text-center xl:px-36 text-gray-500 mt-8 font-semibold'>I offer a range of front-end web development services, including creating responsive websites, building interactive user interfaces, and optimizing performance for a seamless user experience. Whether you're looking for a custom design or need to bring your ideas to life, I'm here to help you create stunning and functional websites.
         </p>
+        </AnimateFadeUp>
+        <AnimateFadeUp>
         <div className='mt-14 grid md:grid-cols-2 xl:grid-cols-3 gap-6'>
             {services.map((service,index)=>(
                 <div key={index} className='flex  p-8 flex-col items-center rounded-lg transition-all duration-300 ease-in-out shadow-md hover:shadow-lg  overflow-hidden'>
@@ -49,6 +56,7 @@ function MyServices() {
                 </div>  
             ))}
         </div>
+        </AnimateFadeUp>
     </div>
   )
 }

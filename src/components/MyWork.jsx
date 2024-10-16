@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BsPlusLg } from "react-icons/bs";
 import { HiLink } from "react-icons/hi2";
+import AnimateFadeUp from './AnimateFadeUp';
 
 function MyWork() {
     const [state, setState] = useState(null);
@@ -29,10 +30,14 @@ function MyWork() {
 
     return (
         <div className='px-4 md:px-8 lg:px-12 xl:px-20 2xl:px-80 pt-24 pb-24' id='portfolio'>
+            <AnimateFadeUp>
             <h1 className='text-4xl font-extrabold text-center'>My Recent Works</h1>
+            </AnimateFadeUp>
+            <AnimateFadeUp>
             <p className='text-center xl:px-36 text-gray-500 mt-8 font-semibold'>
             Here’s a project I’ve worked on, showcasing my skills and experience in web development. You can visit it and explore the features and design in action by clicking the link below
             </p>
+            </AnimateFadeUp>
             <div className='mt-6 grid md:grid-cols-2 xl:grid-cols-3 gap-10'>
                 {projects.map((project, index) => (
                     <div
@@ -79,7 +84,9 @@ function MyWork() {
                 ))}
             </div>
             <div className='w-full flex justify-center'>
+            <AnimateFadeUp>
                 <button className='bg-indigo-700 rounded-full px-12 mt-14 py-4 font-semibold text-white hover:bg-white hover:text-indigo-700 hover:border-indigo-600 hover:outline hover:outline-1 shadow-slate-400 shadow-md hover:shadow-indigo-700 transition-all ease-in-out duration-500'>More Works</button>
+            </AnimateFadeUp>
             </div>
         </div>
     );

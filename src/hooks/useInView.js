@@ -1,22 +1,28 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 
-const useInView = (ref)=>{
-  const [isInView , setInView] = useState(false);
+const useInView = (ref) => {
+  const [isInView, setInView] = useState(false);
 
-  useEffect(()=>{
-    const handleScroll = ()=>{
-      if(ref.current){
-        const top = ref.current.getBoundingClientRect().top;
-        if(top <= window.innerHeight && top>=0){
+  useEffect(() => {
+    if (!ref.current) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
           setInView(true);
-        }else{
-          setInView(false);
         }
+      },
+      { threshold: 0.1 } // Trigger when 10% of the element is visible
+    );
+
+    observer.observe(ref.current);
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
       }
-    }
-    window.addEventListener('scroll',handleScroll);
-    return ()=> window.removeEventListener('scroll',handleScroll);
-  },[ref]);
+    };
+  }, [ref]);
 
   return isInView;
 };

@@ -44,7 +44,7 @@ function Navbar() {
         <div className={` px-4 md:px-8 lg:px-12 xl:px-20 2xl:px-80  shadow-lg w-full bg-white transition-all duration-500 ease-in-out ${bgHeight ? 'py-3 lg:py-0': 'py-5 lg:py-2'}`}>
             <div className={`flex justify-between items-center `}>
                 <div className=''>
-                    <img src="logo/mylogo.jpg" className='w-20 rounded-md shadow-md' />
+                    <img src="logo/mylogo.jpg" className='w-[60px] md:w-20 rounded-md shadow-md' />
                 </div>
                 <div className='hidden lg:block  h-full '>
 
@@ -74,7 +74,7 @@ function Navbar() {
                                     smooth={true}
                                     duration={500}
                                     offset={-100}
-                                    className='cursor-pointer'
+                                    className='cursor-pointer font-semibold'
                                     activeClass= 'text-indigo-600 font-bold'
                                     onSetActive={() => setActiveLine(index)}
                                     >
@@ -87,7 +87,7 @@ function Navbar() {
 
                 </div>
                 <div className='lg:hidden' onClick={changeHamBurger}>
-                    <span className=' text-4xl'>
+                    <span className=' text-3xl'>
                         {/* Hamburger Icon */}
                         <LiaBarsSolid
                         className={` absolute transition-all duration-1000 ease-in-out transform ${
@@ -97,7 +97,7 @@ function Navbar() {
 
                         {/* Close Icon */}
                         <TfiClose
-                        className={` transition-all duration-1000 ease-in-out transform ${
+                        className={` transition-all duration-1000 ease-in-out transform text-[27px] ${
                             hamBurger ? 'opacity-100 rotate-0 scale-100' : 'opacity-0 rotate-180 scale-0'
                         }`}
                         />
@@ -107,7 +107,7 @@ function Navbar() {
         </div>
 
         <div className={`mt-1 transition-[max-height] duration-500 px-4 md:px-12 lg:hidden ease-in-out overflow-hidden ${hamBurger ? 'max-h-96' : 'max-h-0'}`}>
-            <div className='bg-white px-4 py-4 font-semibold text-lg flex flex-col gap-2 shadow-lg rounded-md'>
+            <div className='bg-white px-4 py-4 font-semibold text-lg flex flex-col gap-2 shadow-lg rounded-md border-b'>
                 <ul className=' flex flex-col gap-4 md:gap-6 text-gray-500 text-lg font-semibold pl-6'>
                 <ul className='flex flex-col gap-8 text-gray-500 text-lg font-semibold '>
                         {[
@@ -124,7 +124,7 @@ function Navbar() {
                                     spy={true}
                                     smooth={true}
                                     duration={500}
-                                    className='cursor-pointer'
+                                    className='cursor-pointer text-sm md:text-lg'
                                     activeClass= 'text-indigo-600 font-bold'
                                     onClick={handleClick}
                                     >

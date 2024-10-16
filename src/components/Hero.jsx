@@ -4,15 +4,17 @@ import { BsLinkedin } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa6";
 import { IoMdArrowDown } from "react-icons/io";
 import { Link } from 'react-scroll';
-
-
+import AnimateFadeUp from './AnimateFadeUp';
 function Hero() {
   return (
     <div className=" px-4 md:px-8 lg:px-12 xl:px-20 2xl:px-80 pt-28 pb-28 2xl:pt-48 2xl:pb-36 flex lg:justify-between items-center " id='home'>
         <div className='ml-10 md:ml-20 lg:ml-0'>
+        <AnimateFadeUp>
           <h1 className='text-2xl md:text-4xl font-semibold text-indigo-700'>HELLO, I'M</h1>
+        </AnimateFadeUp>
           <h1 className='text-4xl md:text-6xl font-semibold mt-3'>SHEK RASEL</h1>
           <h2 className='text-gray-500 mt-4 text-lg font-semibold'>JavaScript Developer</h2>
+          <AnimateFadeUp>
           <button className='bg-indigo-600 py-4 px-6 rounded-full mt-10 text-white shadow-lg shadow-indigo-500 hover:bg-slate-50 hover:text-black hover:border-indigo-700 hover:outline-indigo-700 hover:outline-1 hover:outline transition-all ease-in-out duration-500 font-semibold'>
 
             <Link
@@ -26,6 +28,7 @@ function Hero() {
             </Link>
 
           </button>
+            </AnimateFadeUp>
 
           <div className=' mt-44 flex gap-2'>
             <div className='w-1/4  border-t-2 mt-5 border-indigo-600'></div>
