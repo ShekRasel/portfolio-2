@@ -1,4 +1,3 @@
-import React from 'react'
 import AnimateFadeUp from './AnimateFadeUp';
 
 function MyServices() {
@@ -41,7 +40,7 @@ function MyServices() {
         </AnimateFadeUp>
 
         <AnimateFadeUp>
-        <p className='text-center xl:px-36 text-gray-500 mt-8 font-semibold'>I offer a range of front-end web development services, including creating responsive websites, building interactive user interfaces, and optimizing performance for a seamless user experience. Whether you're looking for a custom design or need to bring your ideas to life, I'm here to help you create stunning and functional websites.
+        <p className='text-center xl:px-36 text-gray-500 mt-8 font-semibold'>I offer a range of front-end web development services, including creating responsive websites, building interactive user interfaces, and optimizing performance for a seamless user experience. Whether you&apos;re looking for a custom design or need to bring your ideas to life, I&apos;m here to help you create stunning and functional websites.
         </p>
         </AnimateFadeUp>
         <AnimateFadeUp>
