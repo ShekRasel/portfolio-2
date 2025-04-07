@@ -28,11 +28,21 @@ function MyWork() {
       name: "Expense Tracker",
       projectLink: "https://expense-tracker-mu-puce.vercel.app/",
     },
+    {
+      image: "image/cryptoland.png",
+      name: "Cryptoland",
+      projectLink: "https://cryptoland-chi.vercel.app/",
+    },
 
     {
       image: "image/project1.png",
       name: "NFT Market Place",
       projectLink: "https://nft-market-place-chi-eight.vercel.app/",
+    },
+    {
+      image: "image/hotel.png",
+      name: "Hotel management",
+      projectLink: "https://da-hotel-website.vercel.app/",
     },
 
     {
@@ -58,11 +68,8 @@ function MyWork() {
       name: "YouTube Clone, html/css",
       projectLink: "https://youtube-clone-eight-sable.vercel.app/",
     },
-    {
-      image: "image/cryptoland.png",
-      name: "Cryptoland",
-      projectLink: "https://cryptoland-chi.vercel.app/",
-    },
+    
+    
   ];
 
   return (
