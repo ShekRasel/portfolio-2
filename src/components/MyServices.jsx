@@ -61,14 +61,19 @@ function MyServices() {
       </motion.h1>
 
       
-        <p className="text-center xl:px-36 text-gray-500 mt-8 font-semibold">
+        <motion.p
+          ref={ref}
+          initial={{ opacity: 0, scale: 0 }}
+          animate={isInView && { opacity: 100, scale: "100%" }}
+          transition={{ ease:"easeInOut", duration: 1, delay: 0.5 }}
+        className="text-center xl:px-36 text-gray-500 mt-8 font-semibold">
           I offer a range of front-end web development services, including
           creating responsive websites, building interactive user interfaces,
           and optimizing performance for a seamless user experience. Whether
           you&apos;re looking for a custom design or need to bring your ideas to
           life, I&apos;m here to help you create stunning and functional
           websites.
-        </p>
+        </motion.p>
       
         <div className="mt-14 grid md:grid-cols-2 xl:grid-cols-3 gap-6">
           {services.map((service, index) => (
