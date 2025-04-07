@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { BsPlusLg } from "react-icons/bs";
 import { HiLink } from "react-icons/hi2";
-import AnimateFadeUp from "./AnimateFadeUp";
-
+import { motion, useInView } from "motion/react";
 function MyWork() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   const [state, setState] = useState(null);
   const [visible, setVisible] = useState(6);
 
@@ -23,10 +24,10 @@ function MyWork() {
     },
 
     {
-        image: "image/expense.png",
-        name: "Expense Tracker",
-        projectLink: "https://expense-tracker-mu-puce.vercel.app/",
-      },
+      image: "image/expense.png",
+      name: "Expense Tracker",
+      projectLink: "https://expense-tracker-mu-puce.vercel.app/",
+    },
 
     {
       image: "image/project1.png",
@@ -66,22 +67,38 @@ function MyWork() {
 
   return (
     <div
-      className="px-4 md:px-8 lg:px-12 xl:px-20 2xl:px-80 pt-24 pb-24"
+      className="px-4 md:px-8 lg:px-12 xl:px-20 2xl:px-80 pt-6 pb-24"
       id="portfolio"
+      ref={ref}
     >
-      <AnimateFadeUp>
-        <h1 className="text-4xl font-extrabold text-center">My Recent Works</h1>
-      </AnimateFadeUp>
-      <AnimateFadeUp>
-        <p className="text-center xl:px-36 text-gray-500 mt-8 font-semibold">
+      <div className=" flex justify-center items-center  relative overflow-x-hidden   w-full min-h-44">
+        <motion.h1
+          initial={{ x: "100vw", opacity: 0 }}
+          animate={isInView ? { x: 0, opacity: "100%" } : {}}
+          transition={{ duration: 1 }}
+          className="text-4xl  font-extrabold  top-0 absolute"
+        >
+          My Recent Works
+        </motion.h1>
+        <motion.p
+          initial={{ x: "-100vw" }}
+          animate={isInView ? { x: 0 } : {}}
+          transition={{ duration: 1 }}
+          className="text-center xl:px-36 text-gray-500 top-16 absolute font-semibold"
+        >
           Here’s a project I’ve worked on, showcasing my skills and experience
           in web development. You can visit it and explore the features and
           design in action by clicking the link below
-        </p>
-      </AnimateFadeUp>
+        </motion.p>
+      </div>
+
       <div className="mt-6 grid md:grid-cols-2 xl:grid-cols-3 gap-10">
         {projects.slice(0, visible).map((project, index) => (
-          <div
+          <motion.div
+            initial={{ scale: 0, opacity: 0 }}
+            whileInView={{scale:1, opacity:1}}
+            viewport={{once:true}}
+            transition={{ delay: index * 0.2, ease: "easeInOut" }}
             className="h-64 shadow-lg bg-cover mt-10 rounded-lg hover:scale-105 ease-in-out transition-all duration-700"
             onMouseEnter={() => showElement(index)}
             onMouseLeave={hideElement}
@@ -133,19 +150,20 @@ function MyWork() {
                 </div>
               )}
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
       <div className="w-full flex justify-center">
         {projects.length > visible && (
-          <AnimateFadeUp>
-            <button
+            <motion.button
+            initial={{y:20}}
+            whileInView={{y:0}}
+            viewport={{once:true}}
               onClick={() => setVisible(projects.length)}
               className="bg-indigo-700 rounded-full px-12 mt-14 py-4 font-semibold text-white hover:bg-white hover:text-indigo-700 hover:border-indigo-600 hover:outline hover:outline-1 shadow-slate-400 shadow-md hover:shadow-indigo-700 transition-all ease-in-out duration-500"
             >
               More Works ...
-            </button>
-          </AnimateFadeUp>
+            </motion.button>
         )}
       </div>
     </div>

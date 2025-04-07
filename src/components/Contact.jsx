@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { IoLocationOutline } from "react-icons/io5";
 import { SlCallIn } from "react-icons/sl";
 import { AiTwotoneMail } from "react-icons/ai";
-import AnimateFadeUp from "./AnimateFadeUp";
+
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -72,13 +72,13 @@ function Contact() {
       className="px-4 md:px-8 lg:px-12 xl:px-20 2xl:px-80 bg-gray-50  pt-24 pb-24"
       id="contact"
     >
-      <AnimateFadeUp>
+      
         <h1 className="text-4xl font-extrabold text-center">Get In Touch</h1>
-      </AnimateFadeUp>
+      
       <p className="text-center xl:px-36 text-gray-500 mt-8 font-semibold">
         Looking to collaborate or have any questions? Feel free to reach out!
-        Whether it's for web development projects, consultations, or general
-        inquiries, I'm here to help. You can contact me through email or phone,
+        Whether it&apos;s for web development projects, consultations, or general
+        inquiries, I&apos;m here to help. You can contact me through email or phone,
         and I’ll respond as soon as possible!
       </p>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mt-14">
@@ -96,7 +96,7 @@ function Contact() {
           </div>
         ))}
       </div>
-      <AnimateFadeUp>
+      
         <div className="mt-16 lg:flex gap-8 w-full">
           <div className="lg:w-1/2">
             <form className="flex flex-col" onSubmit={handleSubmit}>
@@ -147,7 +147,7 @@ function Contact() {
             </div>
           </div>
         </div>
-      </AnimateFadeUp>
+      
       <ToastContainer />
     </div>
   );
